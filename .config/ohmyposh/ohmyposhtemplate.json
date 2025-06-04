@@ -1,0 +1,64 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "palette": {
+	"background": "BACKGROUND_P",
+	"foreground": "FOREGROUND_P",
+	"color0": "COLOR_0",
+	"color1": "COLOR_1",
+	"color2": "COLOR_2",
+	"color3": "COLOR_3",
+	"color4": "COLOR_4",
+	"color5": "COLOR_5"
+    },
+
+
+    "blocks": [
+    {
+	"type": "prompt",
+	"alignment": "left",
+	"segments": [{
+	    "foreground": "p:foreground",
+	    "background": "p:color1",
+	    "properties": {
+		"folder_separator_icon": " \ue281 ",
+		"style": "full",
+		"cycle_folder_separator": true,
+		"cycle": [
+		    "p:foreground,p:color1",
+		    "p:foreground,p:color2",
+		    "p:foreground,p:color3"
+		]
+	    },
+	    "style": "powerline",
+	    "powerline_symbol": "\ue0c6",
+	    "template": " {{ .Path}} ",
+	    "type": "path"
+	}]
+    },
+
+    {
+	"type": "rprompt",
+	"alignment": "right",
+	"segments": [{
+	    "foreground": "#61AFEF",
+	    "background": "#ffffff",
+	    "type": "time",
+	    "style": "plain",
+	    "properties": {
+		"time_format": "15:04"	
+	    },
+	    "template": " {{.CurrentDate | date .Format }} "
+	}]
+    }
+    ],
+
+    "transient_prompt": {
+	"alignment": "right",
+	"background": "transparent",
+	"foreground": "#61AFEF",
+	"template": "\ue228 {{now | date \"15:04\"}} "
+    },
+
+    "final_space": true,
+    "version": 3
+}
