@@ -16,9 +16,9 @@ Ricing
 | Component | Program | Link to Details | Role |
 | --- | --- | --- | --- |
 | Status Bar | TODO | | Bar that displays time, current windows/ workspace, etc. |
-| Wallpaper | swww |  |  |
+| Wallpaper | [swww](https://github.com/LGFae/swww) |  |  |
 | Prompt Theming | ohmyposh |  |  |
-| Color Theming | pywal |  |  |
+| Color Theming | [pywal](https://github.com/dylanaraps/pywal) |  | Set wallpapers and create colour schemes |
 |  |  |  |  |
 
 
@@ -63,4 +63,10 @@ Utility
   hello!
 </details>
 
-
+### Colour Management
+<details>
+  Use pywal to utilise & set colours, but don't use it to set wallpaper, since it doesn't play nice with swww
+  Create and feed pywal a custom set of themes eventually instead of the auto-generated ones, since they aren't great
+  Run one script to do the full shebam with setting backgrounds, ohmyposh and pywal stuff
+  Maybe consider ditching swww?
+</details>
